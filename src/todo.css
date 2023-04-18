@@ -1,0 +1,136 @@
+.container {
+    margin: auto;
+    max-width: 600px;
+}
+
+li img {
+    width: 20px;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    padding: 15px;
+    margin-top: 15px;
+    box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addButton {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border: none;
+    background-color: rgb(66, 119, 218);
+    color: #fff;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.addButton:hover {
+    background-color: #4791ff;
+    cursor: pointer;
+}
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hideModal {
+    display: none;
+}
+
+.cardModal {
+    padding: 40px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.cardModal input {
+    padding: 7px;
+    margin-right: 10px;
+    border-radius: 7px;
+}
+
+.cardModal button {
+    padding: 6px;
+    border-radius: 5px;
+    background-color: #4791ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+    .container {
+      max-width: 100%;
+      padding: 10px;
+    }
+    .item {
+      font-size: 24px;
+      padding: 10px;
+    }
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .addButton {
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      border-radius: 20px;
+    }
+  }
+  
+  /* For screens between 600px and 900px */
+  @media (min-width: 601px) and (max-width: 900px) {
+    .container {
+      max-width: 100%;
+      padding: 20px;
+    }
+    .item {
+      font-size: 28px;
+      padding: 20px;
+    }
+  }
+  
+  /* For screens larger than 900px */
+  @media (min-width: 901px) {
+    .container {
+      max-width: 600px;
+      padding: 40px;
+    }
+    .item {
+      font-size: 30px;
+      padding: 15px;
+    }
+  }
+  
+  
+
