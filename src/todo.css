@@ -112,6 +112,7 @@ ul {
   border: 1px solid #ccc;
   border-radius: 50%;
   margin-right: 8px;
+  cursor: pointer;
   position: relative;
 }
 
